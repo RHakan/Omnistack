@@ -46,6 +46,8 @@ async function handleAddDev(e){
   
   setGithub_username('');
   setTechs('');
+
+  setDevs([...devs, response.data ]);
 }
   return (
     <div id="app">
@@ -78,7 +80,7 @@ async function handleAddDev(e){
       <main>
           <ul>
             {devs.map(dev => (
-            <li className="dev-item">
+            <li key={dev._id} className="dev-item">
               <header>
                 <img src={dev.avatar_url} alt={dev.name}/>
                 <div className="user-info">
