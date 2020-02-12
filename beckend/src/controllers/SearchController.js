@@ -24,7 +24,7 @@ module.exports = {
             return response.json({ devs });
         }catch (err) {
             next(err);
-          }
+        }
 
         }
     }
