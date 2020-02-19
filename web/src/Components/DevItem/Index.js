@@ -1,6 +1,7 @@
 import React from 'react';
 import './styles.css';
 
+
 function DevItem({ dev }){
     return(
         <li className="dev-item">
@@ -13,6 +14,7 @@ function DevItem({ dev }){
             </header>
             <p>{dev.bio}</p>
             <a href={`https://github.com/${dev.github_username}`}>Acessar perfil no github</a>
+            
             </li>
     );
 }

@@ -5,7 +5,7 @@ const cors = require('cors');
 
 const app = express();
 
-mongoose.connect('mongodb+srv://rhakan:energetic17@cluster0-lt2vo.mongodb.net/semana10?retryWrites=true&w=majority', {
+mongoose.connect('mongodb+srv://rhakan:95129412@cluster0-lt2vo.mongodb.net/semana10?retryWrites=true&w=majority', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
