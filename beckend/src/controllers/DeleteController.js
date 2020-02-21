@@ -7,7 +7,7 @@ module.exports = {
         try {
             const github_username = request.params;
             const devs = await Dev.deleteOne(github_username);
-
+            console.log(request.params);
             return response.json(devs); 
         }catch (err) {
           next(err);
